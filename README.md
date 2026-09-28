@@ -3,7 +3,7 @@ def cadastrar_produto():
 
     nome = input("Nome do produto: ").strip().upper()
 
-    while nome == "":
+    while nome = "":
         print("O nome não pode ficar vazio.")
         nome = input("Nome do produto: ").strip().upper()
 
@@ -55,7 +55,7 @@ def buscar_produto(produtos, nome):
 
 def atualizar_estoque(produto, quantidade, operacao):
     if operacao == "entrada":
-        produto["quantidade"] += quantidade
+        produto["quantidade" += quantidade
         return True
 
     if operacao == "saida":
@@ -82,7 +82,7 @@ def mostrar_estoque(produtos):
 
     total = 0
 
-    for produto in produtos:
+    fr produto in produtos:
         valor = calcular_valor_estoque(produto)
         total += valor
 
@@ -100,7 +100,7 @@ def mostrar_estoque(produtos):
 
     print(f"\nValor total do estoque: R$ {total:.2f}")
 
-    return total
+    return otal
 
 
 def menu():
@@ -119,7 +119,7 @@ def menu():
     return input("Escolha uma opção: ").strip()
 
 
-def main():
+ main():
     produtos = []
 
     while True:
@@ -226,7 +226,7 @@ def main():
                 except ValueError:
                     print("Digite um percentual válido.")
 
-        elif opcao == "7":
+        elf opcao == "7":
             print("Programa encerrado.")
             break
 
@@ -234,5 +234,5 @@ def main():
             print("Opção inválida.")
 
 
-if __name__ == "__main__":
+if __name__ == "__min__":
     main()
